@@ -1,22 +1,25 @@
 import js from "@eslint/js";
 import prettier from "eslint-config-prettier";
+import prettierPlugin from "eslint-plugin-prettier";
 
 export default [
   js.configs.recommended,
-  prettier,
+  prettier, // ปิดกฎที่ขัดแย้งกับ Prettier
+  prettierPlugin, // เปิดใช้ Prettier เป็น ESLint rule
   {
     languageOptions: {
       ecmaVersion: "latest",
       sourceType: "module",
       globals: {
-        console: "readonly" // ทำให้ ESLint รับรู้ว่า console ถูกต้อง
+        console: "readonly"
       }
     },
     rules: {
-      "quotes": ["error", "double"],
-      "indent": ["error", 2],
+      quotes: ["error", "double"],
+      indent: ["error", 2],
       "linebreak-style": 0,
-      "no-console": "off" // ปิดการแจ้งเตือน console
+      "no-console": "off",
+      "prettier/prettier": "error" // บังคับใช้ Prettier ผ่าน ESLint
     }
   }
 ];
