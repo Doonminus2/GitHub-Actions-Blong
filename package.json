@@ -4,12 +4,11 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-  "lint": "eslint .",
-  "lint:fix": "eslint . --fix",
-  "format": "prettier --write .",
-  "format:check": "prettier --check ."
-}
-,
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:test": "prettier --write Test.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
