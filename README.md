@@ -12,5 +12,5 @@ Start the Use lint and Prettier :
 
 ```bash
 npm run lint:fix
-npx prettier --write Test.js
+npm prettier --write Test.js
 ```
