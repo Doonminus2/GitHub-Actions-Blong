@@ -3,5 +3,5 @@ function sayHello(name) {
   console.log("Hello, " + name); // ควรใช้ template literals
   return "Hi, " + name;
 }
-
-sayHello("World");
+        
+sayHello("World")

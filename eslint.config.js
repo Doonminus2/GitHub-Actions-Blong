@@ -15,8 +15,8 @@ export default [
       }
     },
     rules: {
-      quotes: ["error", "double"],
-      indent: ["error", 2],
+      "quotes": ["error", "double"],
+      "indent": ["error", 2],
       "linebreak-style": 0,
       "no-console": "off",
       "prettier/prettier": "error" // บังคับใช้ Prettier ผ่าน ESLint
