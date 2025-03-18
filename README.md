@@ -8,9 +8,9 @@ Install the dependencies:
 npm install
 ```
 
-Start the Use lint:
+Start the Use lint and Prettier :
 
 ```bash
-npm lint
-npm lint:fix
+npm run lint:fix
+npx prettier --write Test.js
 ```
