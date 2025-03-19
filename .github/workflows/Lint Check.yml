@@ -27,7 +27,7 @@ jobs:
       - name: Run ESLint
         run: npm run lint
 
-      - name: Check Formatting with Prettier (Only Test.js)
-        run: npx prettier --check Test.js
+      - name: Check Formatting with Prettier (Only Demo.js)
+        run: npx prettier --check Demo.js
 
 
